@@ -1,0 +1,50 @@
+# Visual Studio Code settings
+.vscode/
+
+# Compiled binary files
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Build directories
+build/
+bin/
+Debug/
+Release/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.swp
+*~
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# SDL related
+/Library/Frameworks/SDL2.framework
+/Library/Frameworks/SDL2_image.framework
+
+# Ignoring example image files (if you have any)
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Ignore executable produced by g++
+main
