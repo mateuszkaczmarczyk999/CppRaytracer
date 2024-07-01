@@ -1,6 +1,8 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <iostream>
+#include "Vector3.h"
+
 // Function to save the rendered image as a PNG
 void save_png(const char* filename, SDL_Surface* surface) {
     if (IMG_SavePNG(surface, filename) != 0) {
@@ -60,6 +62,22 @@ int main(int argc, char* argv[]) {
     }
 
     // Main loop
+    Vector3 v1;
+    v1.withX(1.0);
+
+    Vector3 v2;
+    v2.withX(2.0);
+
+    std::cout << "v1.x: " << v1.getX() << std::endl;
+    std::cout << "v2.x: " << v2.getX() << std::endl;
+
+    v1.normalize();
+    v2.normalize();
+
+    double dot = v1.dot(v2);
+
+    std::cout << "Dot product: " << dot << std::endl;
+
     bool quit = false;
     SDL_Event e;
     while (!quit) {
